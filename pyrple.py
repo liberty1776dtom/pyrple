@@ -61,12 +61,16 @@ class purple(object):
         return str(line_1+line_2+line_3+line_4+'\n\n')
 
     def __generate_hash(self):
+        # String must be converted to bytes for Python 3 compatibility.
+        pkey_bytes = bytes(self.private_key, 'latin-1')
+        sig_bytes = bytes(self.__generate_signature(), 'latin-1')
+        
         hash_message = hmac.new(
-            self.private_key,
-            self.__generate_signature(),
+            pkey_bytes,
+            sig_bytes,
             hashlib.sha256
         ).hexdigest()
-
+        
         return hash_message
 
     def __generate_header(self):
