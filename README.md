@@ -1,7 +1,7 @@
 # pyrple
 ### Python wrapper to make simple *GET* requests with the <a href="http://purple.ai/">Purple Wifi</a> API.
 
-*Purple Wifi* is an enterprise SAAS platform for managing public wifi access across large commercial estates such as property developments, stadiums, or public transportation. The Purple platform comes with a RESTFUL API that can be used to retrive data about the wifi venues and visitors who have connected to the public wifi.
+*Purple Wifi* is an enterprise SAAS platform for managing public wifi access across large commercial estates such as property developments, stadiums, or public transportation. The Purple platform comes with a RESTFUL API that can be used to retrieve data about the wifi venues and visitors who have connected to the public wifi.
 
 *Pyrple* is a simple Python wrapper around the Purple API to allow really simple requests to get visitor and venue data out of the platform.
 
