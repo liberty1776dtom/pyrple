@@ -13,20 +13,19 @@
 
 ## Usage
 
-You first create an instance using your unique Purple wifi public and private keys.
-For example, credentials can be loaded from a locally stored *json* file in format:
+First create an API instance using your public and private keys.
 
+For example, loading credentials from a locally stored *json* file in format:
 ```json
 {"public_key": "abcdefghij123454KLMnoP123", "private_key": "qrstuv98765434WxyZ"}
 ```
-
-The API instance can then be created with:
+we can then create the API instance with:
 
 ```python
 my_purple = purple(public_key = public_key, private_key = private_key)
 ```
 
-Now retrieve your data using the built in methods:
+Data can now be retrieved using the built-in methods:
 
 ```python
 my_purple.venues()
@@ -47,10 +46,11 @@ returns a *json* dictionary of all visitor info for the specified venue ID. By d
 
 ## Example
 
+In:
 ```python
 my_purple.venues()
 ```
-out:
+Out:
 ```python
 {u'Venue 1 - entrance': 52133,
  u'Venue 2 - podium': 44663,
