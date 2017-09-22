@@ -9,7 +9,7 @@
 
 *Pyrple* is now available for download via pypi:
 
-<code>pip install pyrple</code>
+<code>pip install -U pyrple</code>
 
 ## Usage
 
