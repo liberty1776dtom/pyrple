@@ -49,6 +49,13 @@ returns a *json* dictionary of all visitor info for the specified venue ID. By d
 
 In:
 ```python
+from pyrple import purple
+
+# Replace with your Purple API keys.
+keys = {"public_key": "abcdefghij123454KLMnoP123",
+        "private_key": "qrstuv98765434WxyZ"}
+        
+my_purple = purple(public_key = keys["public_key"], private_key = keys["private_key"])
 my_purple.venues()
 ```
 Out:
